@@ -8,8 +8,8 @@ const Statistics = () => {
     console.log(finalData);
     return (
         <div className='md:pt-36 pt-32 flex justify-center flex-col max-w-[730px] m-auto'>
-            <h1 className="text-3xl text-gray-600 font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl">
-                Quiz Summary:
+            <h1 className="text-3xl text-blue-500 font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl">
+                Quiz Summary :
             </h1>
             <div className='r-inner'>
                 <ResponsiveContainer width="100%" height="80%">

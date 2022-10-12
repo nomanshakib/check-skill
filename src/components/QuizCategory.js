@@ -10,7 +10,7 @@ const QuizCategory = ({quiz}) => {
                 <h3 className="title-font text-3xl font-bold text-gray-900 mb-3">{name}</h3>
                 <div className="flex items-center flex-wrap justify-between">
                     <Link to={`/quiz/${id}`}>
-                        <button  className="text-cyan-400 btn font-semibold inline-flex items-center md:mb-2 lg:mb-0">Start Practice
+                        <button  className="text-blue-500 btn font-semibold inline-flex items-center md:mb-2 lg:mb-0">Start Practice
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>

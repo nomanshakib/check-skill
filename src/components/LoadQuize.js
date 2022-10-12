@@ -9,7 +9,7 @@ const LoadQuize = () => {
     let quizSerial = 1;
     return (
         <div className='md:mt-20 lg:my-40 '>
-            <h1 className='text-3xl text-center font-bold pb-7 mb-20 text-gray-600 quiz-title relative'>Check Knowledge Of {quizes.data.name}</h1>
+            <h1 className='text-3xl text-center font-bold pb-7 mb-20 text-blue-500 quiz-title relative'>Check Knowledge Of {quizes.data.name} :</h1>
             <div className='quiz-container max-w-4xl mx-auto  rounded-md'>
                 {
                     totalQuiz.questions.map(quizDis => <DiplayQ key={quizDis.id} quizSerial={quizSerial++} quizDis={quizDis} />)
