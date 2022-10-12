@@ -9,9 +9,11 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
-        errorElement: <ErrorPage/>,
+        errorElement: <ErrorPage />,
+        
         children: [
-            { path: '/', element: <Home /> },
+            { path: '/', element: <Home />, loader: () => fetch('https://openapi.programming-hero.com/api/quiz'), },
+            { path: '/home', element: <Home /> , loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),},
             { path: '/statistics', element: <Statistics /> },
             {path: '/blog', element: <Blog />},
         ]

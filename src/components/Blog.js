@@ -13,7 +13,7 @@ const Blog = () => {
     return (
         <section className="md:pt-36 flex justify-center flex-col max-w-[730px] m-auto text-center">
             <h1 className="text-3xl text-gray-600 font-bold relative mb-5 quiz-title pb-5 leading-none text-center sm:text-4xl">
-                Question
+                Question:
             </h1>
             <div className='pt-8 pb-16 text-left'>
                 <Fragment>

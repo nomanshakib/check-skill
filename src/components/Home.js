@@ -1,6 +1,10 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import QuizCategory from "./QuizCategory";
 
 const Home = () => {
+  const quizData = useLoaderData();
+  const quizValue = quizData.data;
   return (
     <section>
       <div className="bg-gray-100">
@@ -17,7 +21,9 @@ const Home = () => {
             <h2 className="ttext-3xl font-bold relative mb-10 quiz-title pb-5 leading-none text-center sm:text-4xl">Select the one that you wanted to Check:</h2>
             <div className="container px-5 py-5 pb-32 mx-auto">
                 <div className="grid grid-cols-4 gap-5">
-                    
+                    {
+                      quizValue.map(quiz => <QuizCategory quiz={quiz} />)
+                    }
                 </div>
             </div>
         </section>
