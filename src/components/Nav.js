@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import '../components/allStyle.css'
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
@@ -12,20 +13,20 @@ const Nav = () => {
           className='inline-flex items-center'
         >
           <img className='max-w-[50px]' src={logo} alt="" />
-          <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-            Check Skill!
+          <span className='ml-2 text-xl font-bold tracking-wide text-black uppercase'>
+            Check Skill...
           </span>
         </NavLink>
-        <ul className='flex items-center space-x-8 lg:flex'>
+        <ul className='flex items-center space-x-8 lg:flex dasktop-manu'>
           <li>
             <NavLink
               to='/home'
               aria-label='Home'
               title='Home'
               className= {({isActive}) => isActive ?
-              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-blue-500 border-b-blue-500 mb-3 pb-1'
               : 
-              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              'font-bold tracking-wide text-black transition-all duration-5000  hover:text-blue-500 '
               }
             >
               Home
@@ -37,9 +38,9 @@ const Nav = () => {
               aria-label='Statistics'
               title='Statistics'
               className= {({isActive}) => isActive ?
-              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-blue-500 border-b-blue-500 mb-3 pb-1'
               : 
-              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              'font-bold tracking-wide text-black transition-all duration-5000  hover:text-blue-500 '
               }
             >
               Statistics
@@ -51,9 +52,9 @@ const Nav = () => {
               aria-label='Blog'
               title='Blog'
               className= {({isActive}) => isActive ?
-              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-amber-500 border-b-amber-500 mb-3 pb-1'
+              'font-bold tracking-wide transition-all duration-5000 hover:text-deep-purple-accent-400 border-b-2 text-blue-500 border-b-blue-500 mb-3 pb-1'
               : 
-              'font-bold tracking-wide text-gray-700 transition-all duration-5000  hover:text-amber-500 '
+              'font-bold tracking-wide text-black transition-all duration-5000  hover:text-blue-500 '
               }
             >
               Blog
@@ -87,24 +88,7 @@ const Nav = () => {
               <div className='p-5 bg-white border rounded shadow-sm'>
                 <div className='flex items-center justify-between mb-4'>
                   <div>
-                    <Link
-                      to='/'
-                      aria-label='Home'
-                      title='Home'
-                      className='inline-flex items-center'
-                    >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 32 32'
-                        fill='currentColor'
-                        className='flex-shrink-0 w-8 h-8 rounded-full text-gray-900'
-                      >
-                        <path d='M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z'></path>
-                      </svg>
-                      <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                         Home
-                      </span>
-                    </Link>
+                    
                   </div>
                   <div>
                     <button
@@ -126,12 +110,12 @@ const Nav = () => {
                   <ul className='space-y-4'>
                     <li>
                       <Link
-                        to='/topics'
+                        to='/home'
                         aria-label='Topics'
                         title='Topics'
                         className='font-bold tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
-                        Topics
+                        Home
                       </Link>
                     </li>
                     <li>

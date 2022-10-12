@@ -21,7 +21,7 @@ const DiplayQ = ({quizDis,quizSerial}) => {
         
         <div className='shadow-2xl rounded-md p-5 mb-12'>
             <div className='flex justify-between items-start mb-5 text-center'>
-                <div className='font-bold text-amber-500 text-2xl max-w-[550px] m-auto'>
+                <div className='font-bold text-blue-500 text-2xl max-w-[550px] m-auto'>
                     <h3 className='inline-block mr-3'>Quiz <span>{quizSerial}:</span></h3>
                     {
                         question.slice(3,-4)
@@ -32,7 +32,7 @@ const DiplayQ = ({quizDis,quizSerial}) => {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg></button>
             </div>
-            <div className='grid grid-cols-2 gap-2'>
+            <div className='grid grid-cols-1 gap-2 custom-quiz'>
                 {
                     options.map(uniqOption => <Option quizDis={quizDis} hanldleQuizAns={hanldleQuizAns} uniqOption={uniqOption} />)
                 }

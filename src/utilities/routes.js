@@ -20,7 +20,7 @@ const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
                 element: <LoadQuize />,
             },
-            { path: '/statistics', element: <Statistics /> },
+            { path: '/statistics', element: <Statistics />, loader: () => fetch('https://openapi.programming-hero.com/api/quiz'), },
             {path: '/blog', element: <Blog />},
         ]
     }
