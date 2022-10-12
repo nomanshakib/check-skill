@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img from '../assets/sigma.png'
 const QuizCategory = ({quiz}) => {
     const {id, name, logo, total} = quiz;
     return (
@@ -20,8 +19,7 @@ const QuizCategory = ({quiz}) => {
                     </Link>
                     
                     <div className='flex items-center'>
-                        <span className='font-semibold text-xl mt-[-1px]'>{total}</span>
-                        <img className='w-[14px] text-gray-400' src={img} alt="" />
+                        <span className='font-semibold text-xl mt-[-1px]'>Total: {total}</span>
                     </div>
                 </div>
             </div>

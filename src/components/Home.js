@@ -22,7 +22,7 @@ const Home = () => {
             <div className="container px-5 py-5 pb-32 mx-auto">
                 <div className="grid grid-cols-4 gap-5">
                     {
-                      quizValue.map(quiz => <QuizCategory quiz={quiz} />)
+                      quizValue.map(quiz => <QuizCategory key={quiz.id} quiz={quiz} />)
                     }
                 </div>
             </div>
