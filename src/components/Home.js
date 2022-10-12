@@ -12,7 +12,7 @@ const Home = () => {
           <h1 className="text-5xl text-blue-500 font-bold leading-none sm:text-6xl xl:max-w-3xl">
             Check Your Knowledge!
           </h1>
-          <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-black">
+          <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-blue-500">
             To check your skill, Do pro test, Enjoy the testing journey , Participate every single test on this site to ensure your knowledge. 
           </p>
         </div>
